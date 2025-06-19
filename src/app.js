@@ -5,15 +5,15 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = function() {
-  let pronoun = ['the', 'our'];
+window.onload = function () {
+  let pron = ['the', 'our'];
   let adj = ['great', 'big'];
   let noun = ['jogger', 'racoon'];
   let ext = [".com", ".net"];
 
   let combinaciones = "";
 
-  pronoun.forEach(p => {
+  pron.forEach(p => {
     adj.forEach(a => {
       noun.forEach(n => {
         ext.forEach(e => {
@@ -23,6 +23,6 @@ window.onload = function() {
     });
   });
 
-document.getElementById("dominio").innerHTML = combinaciones;
+  document.getElementById("dominio").innerHTML = combinaciones;
 
 };
