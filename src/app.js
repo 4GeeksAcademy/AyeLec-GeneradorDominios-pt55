@@ -6,18 +6,18 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function () {
-  let pron = ['the', 'our'];
-  let adj = ['great', 'big'];
-  let noun = ['jogger', 'racoon'];
-  let ext = [".com", ".net"];
+  let pronouns = ['the', 'our'];
+  let adjectives = ['great', 'big'];
+  let nouns = ['jogger', 'racoon'];
+  let extensions = [".com", ".net", ".us", ".io"];
 
   let combinaciones = "";
 
-  pron.forEach(p => {
-    adj.forEach(a => {
-      noun.forEach(n => {
-        ext.forEach(e => {
-          combinaciones += `www.${p}${a}${n}${e}<br>`;
+  pronouns.forEach(pron => {
+    adjectives.forEach(adj => {
+      nouns.forEach(noun => {
+        extensions.forEach(ext => {
+          combinaciones += `www.${pron}${adj}${noun}${ext}<br>`;
         });
       });
     });
@@ -26,3 +26,5 @@ window.onload = function () {
   document.getElementById("dominio").innerHTML = combinaciones;
 
 };
+
+
